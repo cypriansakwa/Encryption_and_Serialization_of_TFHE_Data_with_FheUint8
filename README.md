@@ -36,8 +36,16 @@ cargo run build
 >```
 >cargo -- run release
 >```
-## Installation
+ ## Contributing
+  - If you intend to contribute to this project, fork the repository and make a pull request.
+
+  ## Installation
+
+- To use this project, you need to have Rust installed on your machine.
+- If Rust is not installed, follow the instructions on the [official Rust website](https://www.rust-lang.org/tools/install) to install it.
+- After installing Rust, clone this repository or copy the code into a Rust project, Compile and run the code using cargo run.
 ```
+bash
 git clone  https://github.com/cypriansakwa/Secure_Homomorphic_Computation_Using_TFHE_with_Customizable_Cryptographic_Parameters.git
 ```
 ```
