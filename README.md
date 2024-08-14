@@ -30,6 +30,12 @@ tfhe = { version = "*", features = ["boolean", "shortint", "integer", "x86_64"] 
 #ensure to build cargo after adding the tfhe library
 cargo run build
 ```
+## Run code
+>[!TIP]
+> Performance: for optimal performance, it is highly recommended to run code that uses TFHE-rs in release mode with cargo's --release flag.
+>```
+>cargo -- run release
+>```
 ## Installation
 ```
 git clone  https://github.com/cypriansakwa/Secure_Homomorphic_Computation_Using_TFHE_with_Customizable_Cryptographic_Parameters.git
