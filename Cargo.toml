@@ -1,0 +1,8 @@
+[package]
+name = "Encryption_and_Serialization_of_TFHE_Data_with_FheUint8"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tfhe = { version = "*", features = ["boolean", "shortint", "integer", "x86_64"] }
+bincode = "1.3.3"
