@@ -8,9 +8,33 @@ This project demonstrates how to serialize the ciphertext and encrypt a small nu
 
 
 ## Requirements
-- **Rust:** Ensure you have the latest stable version of Rust installed. 
+- **Rust:** Ensure you have the latest stable version of Rust installed.
+- **Rust version:** a minimum Rust version of $1.73$ is required to compile TFHE-rs.
 - **TFHE Library:** The project depends on the TFHE library for fully homomorphic encryption. Ensure the library is included in your `Cargo.toml` file. 
-## Notes
-- The safe_serialize function is used to convert the encrypted data into a byte format, which can be stored or transmitted as needed.
-- The generate_oblivious_pseudo_random function call is included for completeness but is not used further in this example.
-247247   551815  2370
+
+``` 
+#To include library run:
+cargo add tfhe
+
+#Alternatively paste the line below in 'Cargo.toml' 
+#For x86_64 machine running a Unix-like OS:
+
+tfhe = { version = "0.7.2", features = [ "boolean", "shortint", "integer", "x86_64-unix" ] }
+#For ARM machine running a Unix-like OS:
+
+tfhe = { version = "0.7.2", features = [ "boolean", "shortint", "integer", "aarch64-unix" ] }
+#For x86_64 machines with the rdseed instruction running Windows:
+
+tfhe = { version = "*", features = ["boolean", "shortint", "integer", "x86_64"] }
+
+#ensure to build cargo after adding the tfhe library
+cargo run build
+```
+## Installation
+```
+git clone  https://github.com/cypriansakwa/Secure_Homomorphic_Computation_Using_TFHE_with_Customizable_Cryptographic_Parameters.git
+```
+```
+cd Secure_Homomorphic_Computation_Using_TFHE_with_Customizable_Cryptographic_Parameters
+```
+
